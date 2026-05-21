@@ -2,27 +2,85 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Space Mono', serif;
 }
 
 :root {
-    --green-100: #f3f9fa;
-    --green-200: #c5e4e7;
-    --green-300: #9EBBBD;
-    --green-400: #7F9D9F;
-    --green-500: #5E7A7D;
-    --green-600: #547878;
-    --green-700: #3D6666;
-    --green-800: #00474B;
-    --light-green: #26C2AE;
-    --white: #FFFFFF;
+    --Green-100: #f3f9fa;
+    --Green-200: #c5e4e7;
+    --Green-300: #9ebbbd;
+    --Green-400: #7f9d9f;
+    --Green-500: #5e7a7d;
+    --Green-600: #54787a;
+    --Green-700: #3d6666;
+    --Green-800: #00474b;
+    --Light-Green: #9fe8df;
+    --White: #ffffff;
 }
 
 body {
-    background-color: var(--green-200);
+    background-color: var(--Green-200);
 }
 
 header {
     display: flex;
     justify-content: center;
     padding-block: 2.8rem;
+}
+
+main {
+    background-color: var(--White);
+    padding: 2rem;
+}
+
+.conta {
+    margin-bottom: 2rem;
+}
+
+.conta-label,
+.gorjeta-label {
+    color: var(--Green-500);
+    font-weight: 700;
+}
+
+.conta div {
+    margin-top: 0.4rem;
+    background-color: var(--Green-100);
+    padding: 0.4rem 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0.3125rem;
+}
+
+.conta input {
+    border: none;
+    text-align: right;
+    width: 100%;
+    background: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--Green-800);
+    outline: none;
+}
+
+.conta input::placeholder {
+    color: var(--Green-300);
+}
+
+.conta:focus-within div {
+    outline: 2px solid var(--Light-Green);
+}
+
+.gorjeta div {
+    border: 1px solid red;
+    margin-top: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.gorjeta #outra {
+    width: 100%;
 }

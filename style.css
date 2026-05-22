@@ -6,20 +6,20 @@
 }
 
 :root {
-    --Green-100: #f3f9fa;
-    --Green-200: #c5e4e7;
-    --Green-300: #9ebbbd;
-    --Green-400: #7f9d9f;
-    --Green-500: #5e7a7d;
-    --Green-600: #54787a;
-    --Green-700: #3d6666;
-    --Green-800: #00474b;
-    --Light-Green: #9fe8df;
-    --White: #ffffff;
+    --green-100: #f3f9fa;
+    --green-200: #c5e4e7;
+    --green-300: #9ebbbd;
+    --green-400: #7f9d9f;
+    --green-500: #5e7a7d;
+    --green-600: #54787a;
+    --green-700: #3d6666;
+    --green-800: #00474b;
+    --light-green: #9fe8df;
+    --white: #ffffff;
 }
 
 body {
-    background-color: var(--Green-200);
+    background-color: var(--green-200);
 }
 
 header {
@@ -29,7 +29,7 @@ header {
 }
 
 main {
-    background-color: var(--White);
+    background-color: var(--white);
     padding: 2rem;
 }
 
@@ -38,15 +38,17 @@ main {
     margin-bottom: 2rem;
 }
 
-.conta-label,
-.gorjeta-label {
-    color: var(--Green-500);
+.conta label,
+.gorjeta label,
+.pessoas label {
+    color: var(--green-500);
     font-weight: 700;
 }
 
-.conta div {
+.conta div,
+.pessoas div {
     margin-top: 0.4rem;
-    background-color: var(--Green-100);
+    background-color: var(--green-100);
     padding: 0.4rem 1.2rem;
     display: flex;
     align-items: center;
@@ -54,23 +56,26 @@ main {
     border-radius: 0.3125rem;
 }
 
-.conta input {
+.conta input,
+.pessoas input {
     border: none;
     text-align: right;
     width: 100%;
     background: none;
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--Green-800);
+    color: var(--green-800);
     outline: none;
 }
 
-.conta input::placeholder {
-    color: var(--Green-300);
+.conta input::placeholder,
+.pessoas input::placeholder {
+    color: var(--green-300);
 }
 
-.conta:has(input:focus) div {
-    outline: 2px solid var(--Light-Green);
+.conta:has(input:focus) div,
+.pessoas:has(input:focus) div {
+    outline: 2px solid var(--light-green);
 }
 
 .gorjeta div {
@@ -100,5 +105,9 @@ main {
 }
 
 .gorjeta #outra input::placeholder {
-    color: var(--Green-300);
+    color: var(--green-300);
+}
+
+.pessoas #erro {
+    display: none;
 }
